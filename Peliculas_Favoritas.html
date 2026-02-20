@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Películas Favoritas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Peliculas_Favoritas.html">Mis Películas Favoritas</a></li>
+            <li><a href="Musica_Favorita.html">Mi M&uacute;sica Favorita</a></li>
+            <li><a href="Descripcion_Familia.html">Mi Familia</a></li>
+            <li><a href="Estatus_Academico_Laboral.html">Academico y Laboral</a></li>
+        </ul>
+    </nav>
+    <center>
+    <div>
+    <br>
+    <br>
+        <h1>Mis Películas Favoritas</h1>
+        <p>Películas y series:</p>
+
+        <!-- Galería de películas -->
+        <div class="galeria">
+          <div class="galeria">
+    <!-- Película 1 -->
+    <img src="imgss/LaNiña.jpg" alt="Película 1" width="300"
+         onclick="mostrarDescripcion('La niña de mis ojos:Una historia de amor y amistad entre un joven travieso y una estudiante modelo en la escuela secundaria, explorando temas de adolescencia y primer amor.')">
+
+    <!-- Película 2 -->
+    <img src="imgss/CastilloVagabundo.jpg" alt="Película 2" width="250"
+         onclick="mostrarDescripcion(' El Castillo agabundo:Una joven sombrerera es víctima de un hechizo que la convierte en anciana y busca romper la maldición con la ayuda del mago Howl.')">
+
+    <!-- Película 3 -->
+    <img src="imgss/EstamosMuertos.jpg" alt="Película 3" width="270"
+         onclick="mostrarDescripcion('Estamos Muertos:Estudiantes luchan por sobrevivir en un mundo apocalíptico invadido por zombis.')">
+
+    <!-- Película 4 -->
+    <img src="imgss/PropuestaLaboral.jpg" alt="Película 4" width="300"
+         onclick="mostrarDescripcion('Propuesta Laboral:Joven asiste a una cita a ciegas en lugar de su amiga y se encuentra con el atractivo CEO de su empresa, complicando su vida personal y laboral.')">
+</div>
+<div id="descripcion"></div>
+<br>
+<br>
+<br>
+
+    <script>
+        function mostrarDescripcion(texto) {
+            let desc = document.getElementById("descripcion");
+            desc.innerHTML = "<p>" + texto + "</p>";
+            desc.style.display = "block";
+        }
+    </script>
+    </center>
+</body>
+</html>

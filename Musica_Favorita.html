@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <br>
+  <br>
+    <meta charset="UTF-8">
+    <title>Mi Música Favorita</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Peliculas_Favoritas.html">Mis Películas Favoritas</a></li>
+            <li><a href="Musica_Favorita.html">Mi M&uacute;sica Favorita</a></li>
+            <li><a href="Descripcion_Familia.html">Mi Familia</a></li>
+            <li><a href="Estatus_Academico_Laboral.html">Academico y Laboral</a></li>
+        </ul>
+    </nav>
+
+    <div>
+      <center> 
+        <h1>Mi Música Favorita</h1>
+        <p>Algunas de mis canciones favoritas:</p>
+      </center>
+         <ul>
+            <li>Rock</li>
+            <li>Trap-Argentino</li>
+            <li>K-Pop</li>
+            <li>Pop</li>
+        </ul>
+        <center>
+
+         <h2>Mi cancion favorita</h2>
+        <audio controls>
+            <source src="audio/bluee.mp3" type="audio/mpeg">
+        </audio>
+
+
+         <h2>Artistas / Álbumes</h2>
+        <div class="galeria">
+            <img src="imgss/rock.jpg" alt="Rock" width="250"
+                 onclick="mostrarDescripcion('Esta banda tiene canciones para cualquier momento o sentimiento que tengas cualquier cancion, de mis favoritas es: Vida de espejo.')">
+
+            <img src="imgss/pop.jpg" alt="Pop" width="250"
+                 onclick="mostrarDescripcion('Lana del rey es una de mis artirtas favoritas por la forma que tiene de cantar.')">
+
+            <img src="imgss/trap-argentino.jpg" alt="Trap" width="210"
+                 onclick="mostrarDescripcion('Este genero utiliza efectos de sonido que te pueden crear un ambiente melancolico pero lento.')">
+
+            <img src="imgss/k-pop.jpg" alt="K-Pop" width="260"
+                 onclick="mostrarDescripcion('Este genero combina muchos elementos como el baile, hip-hop,etc.')">
+        </div>
+
+         <div id="descripcion"></div>
+    </div>
+
+    <script>
+        function mostrarDescripcion(texto) {
+            let desc = document.getElementById("descripcion");
+            desc.innerHTML = "<p>" + texto + "</p>";
+            desc.style.display = "block";
+        }
+    </script>
+         
+    <h2>TikTok</h2>
+    <video width="560" height="315" controls>
+        <source src="video/Cenfeee.mp4" type="video/mp4">
+         
+    </video>
+
+      </center>
+</body>
+</html>
